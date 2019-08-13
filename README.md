@@ -1,231 +1,70 @@
-<p align="center">
-  <img width="120" src="public/img/icons/android-chrome-512x512.png">
-</p>
+# 客户服务系统
 
-<p align="center">
-  <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="vue">
-  </a>
-  <a href="https://github.com/ElemeFE/element">
-    <img src="https://img.shields.io/badge/element--ui-2.8.2-brightgreen.svg" alt="element-ui">
-  </a>
-  <a href="https://circleci.com/gh/Armour/vue-typescript-admin-template/tree/master">
-    <img src="https://circleci.com/gh/Armour/vue-typescript-admin-template/tree/master.svg?style=shield" alt="CircleCI">
-  </a>
-  <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome">
-  </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
-  </a>
-  <a href="https://github.com/Armour/Jarvis">
-    <img src="https://img.shields.io/badge/Hi-Jarvis-ff69b4.svg" alt="Template from jarvis">
-  </a>
-</p>
+## 一、项目搭建
 
-English | [简体中文](./README-zh.md)
+### a. 脚手架 [vue-typescript-admin-template](http://armour.github.io/vue-typescript-admin-template)   
 
-## Overview
-
-[vue-typescript-admin-template](http://armour.github.io/vue-typescript-admin-template) is a production-ready front-end solution for admin interfaces which based on [vue](https://github.com/vuejs/vue), [typescript](https://www.typescriptlang.org/) and UI Toolkit [element-ui](https://github.com/ElemeFE/element). The original Javascript version code [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/) was written by [PanJiaChen](https://github.com/PanJiaChen), many thanks to him for the awesome open source project! :)
-
-If you want to get start with a minimal template code instead of integration solution, you can take a look at [minimal](https://github.com/Armour/vue-typescript-admin-template/tree/minimal) branch.
-
-## Documentation
-
-[Docs](https://armour.github.io/vue-typescript-admin-docs)
-
-## Live demo
-
-[Demo](https://armour.github.io/vue-typescript-admin-template)
-
-## Screenshots
-
-![dashboard](./demo/dashboard.png)
-
-## Related Projects
-
-[Armour/vue-typescript-admin-mock-server](https://github.com/armour/vue-typescript-admin-mock-server) (mock server for this project)
-
-[Armour/vue-typescript-admin-docs](https://github.com/armour/vue-typescript-admin-docs) (documentation source for this project)
-
-Javascript version:
-
-[PanJiaChen/vue-admin-template](https://github.com/PanJiaChen/vue-admin-template) (a vue2.0 minimal admin template) 
-
-[PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) (full features supported vue admin) 
-
-[PanJiaChen/electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin) (a vue electron admin project)
-
-## Features
-
-```txt
-- Login / Logout
-
-- Permission Authentication
-  - Page permission
-  - Directive permission
-  - Permission configuration page
-  - Two-step login
-
-- Multi-environment build
-  - Dev / Stage / Prod
-
-- Global Features
-  - I18n
-  - Dynamic themes
-  - Dynamic sidebar (supports multi-level routing)
-  - Dynamic breadcrumb
-  - Tags-view (supports right-click operation)
-  - Clipboard
-  - Svg icons
-  - Search
-  - Screenfull
-  - Settings
-  - Mock data / Mock server
-  - PWA support
-
-- Components
-  - Editors
-    - Rich Text Editor
-    - Markdown Editor
-    - JSON Editor
-  - Avatar Upload
-  - Back To Top
-  - CountTo
-  - Dropzone
-  - Draggable Dialog
-  - Draggable Kanban
-  - Draggable List
-  - Draggable Select
-  - ECharts
-  - Mixin
-  - SplitPane
-  - Sticky
-
-- Table
-  - Dynamic Table
-  - Draggable Table
-  - Inline Edit Table
-  - Complex Table
-
-- Excel
-  - Export Excel
-  - Upload Excel
-  - Excel Visualization
-
-- Zip
-  - Export zip
-
-- PDF
-  - Download pdf
-
-- Dashboard
-- Guide Page
-- Advanced Example Page
-- Error Log
-- Error Page
-  - 401
-  - 404
-```
-
-## Preparation
-
-You need to install [node](http://nodejs.org/) and [git](https://git-scm.com/) locally. The project is based on [typescript](https://www.typescriptlang.org/), [vue](https://vuejs.org/index.html), [vuex](https://vuex.vuejs.org/), [vue-router](https://router.vuejs.org/), [vue-cli](https://github.com/vuejs/vue-cli) , [axios](https://github.com/axios/axios) and [element-ui](https://github.com/ElemeFE/element), all request data is simulated using [faker.js](https://github.com/Marak/Faker.js).
-Understanding and learning these knowledge in advance will greatly help you on using this project.
-
-## Project Structure
+### b. 集成 [Sass](https://github.com/michaelwayman/node-sass-chokidar) 
 
 ```bash
-├── mock/                      # mock server & mock data
-├── public                     # public static assets (directly copied)
-│   │── favicon.ico            # favicon
-│   │── manifest.json          # PWA config file
-│   └── index.html             # index.html template
-├── src                        # main source code
-│   ├── api                    # api service
-│   ├── assets                 # module assets like fonts, images (processed by webpack)
-│   ├── components             # global components
-│   ├── directives             # global directives
-│   ├── filters                # global filter
-│   ├── icons                  # svg icons
-│   ├── lang                   # i18n language
-│   ├── layout                 # global layout
-│   ├── pwa                    # PWA service worker related files
-│   ├── router                 # router
-│   ├── store                  # store
-│   ├── styles                 # global css
-│   ├── utils                  # global utils
-│   ├── views                  # views
-│   ├── App.vue                # main app component
-│   ├── main.ts                # app entry file
-│   ├── permission.ts          # permission authentication
-│   ├── settings.ts            # setting file
-│   └── shims.d.ts             # type definition shims
-├── tests/                     # tests
-├── .circleci/                 # automated CI configuration
-├── .browserslistrc            # browserslist config file (to support Autoprefixer)
-├── .editorconfig              # editor code format consistency config
-├── .env.xxx                   # env variable configuration
-├── .eslintrc.js               # eslint config
-├── babel.config.js            # babel config
-├── cypress.json               # e2e test config
-├── jest.config.js             # jest unit test config
-├── package.json               # package.json
-├── postcss.config.js          # postcss config
-├── tsconfig.json              # typescript config
-└── vue.config.js              # vue-cli config
+npm install --save node-sass-chokidar
 ```
 
-## Project setup
+通过 `npm-run-all` 工具，开启 watcher，详情见 `package.json`。
 
-### Install dependencies
+### c. UI 组件  [Element](https://element.eleme.cn/#/zh-CN) 
+
+
+## 二、项目操作
+
+### 安装依赖
 
 ```bash
 yarn install
 ```
+### 快速开发文件模板 [plop-setting](https://github.com/EngineLin/plop-setting)   
 
-### Compiles and hot-reloads for development
-
-```bash
-yarn run serve
-```
-
-### Compiles and minifies for production
+### 启动本地开发环境（自带热启动）
 
 ```bash
-yarn run build:prod
+yarn serve
 ```
 
-### Lints and fixes files
+### 构建生产环境 (自带压缩)
 
 ```bash
-yarn run lint
+yarn build:prod
 ```
 
-### Run your unit tests
+### 代码格式检查以及自动修复
 
 ```bash
-yarn run test:unit
+yarn lint
 ```
 
-### Run your end-to-end tests
+### 运行单元测试
 
 ```bash
-yarn run test:e2e
+yarn test:unit
 ```
 
-### Generate all svg components
+### 运行端对端测试
+
+```bash
+yarn test:e2e
+```
+
+### 自动生成 svg 组件
 
 ```bash
 yarn run svg
 ```
 
-### Customize Vue configuration
+### 自定义 Vue 配置
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+请看 [Configuration Reference](https://cli.vuejs.org/config/).
 
-## Browsers support
+## 浏览器支持
 
 Modern browsers and Internet Explorer 10+.
 
@@ -233,10 +72,118 @@ Modern browsers and Internet Explorer 10+.
 | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
-## Contributing
+### 项目结构
+本项目已经为你生成了一个完整的开发框架，提供了涵盖后台开发的各类功能和坑位，下面是整个项目的目录结构。
 
-See [CONTRIBUTING.md](https://github.com/Armour/vue-typescript-admin-template/blob/master/.github/CONTRIBUTING.md)
+```bash
+├── mock                       # mock 服务器 与 模拟数据
+├── public                     # 静态资源 (会被直接复制)
+│   │── favicon.ico            # favicon图标
+│   │── manifest.json          # PWA 配置文件
+│   └── index.html             # html模板
+├── src                        # 源代码
+│   ├── api                    # 所有请求
+│   ├── assets                 # 主题 字体等静态资源 (由 webpack 处理加载)
+│   ├── components             # 全局组件
+│   ├── directive              # 全局指令
+│   ├── filters                # 全局过滤函数
+│   ├── icons                  # svg 图标
+│   ├── lang                   # 国际化
+│   ├── layout                 # 全局布局
+│   ├── pwa                    # PWA service worker 相关的文件
+│   ├── router                 # 路由
+│   ├── store                  # 全局 vuex store
+│   ├── styles                 # 全局样式
+│   ├── utils                  # 全局方法
+│   ├── views                  # 所有页面
+│   ├── App.vue                # 入口页面
+│   ├── main.js                # 入口文件 加载组件 初始化等
+│   ├── permission.ts          # 权限管理
+│   ├── settings.ts            # 设置文件
+│   └── shims.d.ts             # 模块注入
+├── tests                      # 测试
+├── .circleci/                 # 自动化 CI 配置
+├── .browserslistrc            # browserslistrc 配置文件 (用于支持 Autoprefixer)
+├── .editorconfig              # 编辑相关配置
+├── .env.xxx                   # 环境变量配置
+├── .eslintrc.js               # eslint 配置
+├── babel.config.js            # babel-loader 配置
+├── cypress.json               # e2e 测试配置
+├── jest.config.js             # jest 单元测试配置
+├── package.json               # package.json 依赖
+├── postcss.config.js          # postcss 配置
+├── tsconfig.json              # typescript 配置
+└── vue.config.js              # vue-cli 配置
+```
+### 项目结构
 
-## License
+```txt
+- 登录 / 注销
 
-[MIT License](https://github.com/Armour/vue-typescript-admin-template/blob/master/LICENSE)
+- 权限验证
+  - 页面权限
+  - 指令权限
+  - 权限配置
+  - 二步登录
+
+- 多环境发布
+  - Dev / Stage / Prod
+
+- 全局功能
+  - 国际化多语言
+  - 动态换肤
+  - 动态侧边栏（支持多级路由嵌套）
+  - 动态面包屑
+  - 快捷导航(支持右键操作)
+  - 粘贴板
+  - Svg 图标
+  - 搜索
+  - 全屏
+  - 设置
+  - Mock 数据 / Mock 服务器
+  - 支持 PWA
+
+- 组件
+  - 编辑器
+    - 富文本编辑器
+    - Markdown 编辑器
+    - JSON 编辑器
+  - 头像上传
+  - 返回顶部
+  - CountTo
+  - 拖放区
+  - 拖拽弹窗
+  - 拖拽看板
+  - 拖拽列表
+  - 拖拽选择
+  - ECharts 图表
+  - Mixin
+  - 拆分窗格
+  - 黏性组件
+
+- 表格
+  - 动态表格
+  - 拖拽表格
+  - 内联编辑表格
+  - 复杂表格
+
+- Excel
+  - 导出excel
+  - 导入excel
+  - 前端可视化excel
+
+- Zip
+  - 导出zip
+
+- PDF
+  - 下载 pdf
+
+- 控制台
+- 引导页
+- 综合实例
+- 错误日志
+- 错误页面
+  - 401
+  - 404
+```
+
