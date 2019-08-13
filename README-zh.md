@@ -114,7 +114,8 @@ Modern browsers and Internet Explorer 10+.
 ├── postcss.config.js          # postcss 配置
 ├── tsconfig.json              # typescript 配置
 └── vue.config.js              # vue-cli 配置
-## 三、功能
+```
+### 项目结构
 
 ```txt
 - 登录 / 注销
