@@ -23,6 +23,9 @@ npm install --save node-sass-chokidar
 yarn install
 ```
 ### 快速开发文件模板 [plop-setting](https://github.com/EngineLin/plop-setting)   
+```bash
+若使用plop命令，初始化之后执行 npm install -g plop 或 yarn global add plop，否则无效
+```
 
 ### 启动本地开发环境（自带热启动）
 
