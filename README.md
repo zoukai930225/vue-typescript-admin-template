@@ -1,6 +1,6 @@
 # 客户服务系统
 
-## 一、项目搭建
+## 项目搭建
 
 ### a. 脚手架 [vue-typescript-admin-template](http://armour.github.io/vue-typescript-admin-template)   
 
@@ -15,65 +15,7 @@ npm install --save node-sass-chokidar
 ### c. UI 组件  [Element](https://element.eleme.cn/#/zh-CN) 
 
 
-## 二、项目操作
-
-### 安装依赖
-
-```bash
-yarn install
-```
-### 快速开发文件模板 [plop-setting](https://github.com/EngineLin/plop-setting)   
-```bash
-若使用plop命令，初始化之后执行 npm install -g plop 或 yarn global add plop，否则无效
-```
-
-### 启动本地开发环境（自带热启动）
-
-```bash
-yarn serve
-```
-
-### 构建生产环境 (自带压缩)
-
-```bash
-yarn build:prod
-```
-
-### 代码格式检查以及自动修复
-
-```bash
-yarn lint
-```
-
-### 运行单元测试
-
-```bash
-yarn test:unit
-```
-
-### 运行端对端测试
-
-```bash
-yarn test:e2e
-```
-
-### 自动生成 svg 组件
-
-```bash
-yarn run svg
-```
-
-### 自定义 Vue 配置
-
-请看 [Configuration Reference](https://cli.vuejs.org/config/).
-
-## 浏览器支持
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
+## 项目操作
 
 ### 项目结构
 本项目已经为你生成了一个完整的开发框架，提供了涵盖后台开发的各类功能和坑位，下面是整个项目的目录结构。
@@ -191,4 +133,64 @@ Modern browsers and Internet Explorer 10+.
   - 401
   - 404
 ```
+
+### 安装依赖
+
+```bash
+yarn install
+```
+### 快速开发文件模板 [plop-setting](https://github.com/EngineLin/plop-setting)   
+```bash
+若使用plop命令，初始化之后执行 npm install -g plop 或 yarn global add plop，否则无效
+```
+
+### 启动本地开发环境（自带热启动）
+
+```bash
+yarn serve
+```
+
+### 构建生产环境 (自带压缩)
+
+```bash
+yarn build:prod
+```
+
+### 代码格式检查以及自动修复
+
+```bash
+yarn lint
+```
+
+### 运行单元测试
+
+```bash
+yarn test:unit
+```
+
+### 运行端对端测试
+
+```bash
+yarn test:e2e
+```
+
+### 自动生成 svg 组件
+
+```bash
+yarn run svg
+```
+
+### 自定义 Vue 配置
+
+请看 [Configuration Reference](https://cli.vuejs.org/config/).
+
+## 浏览器支持
+
+Modern browsers and Internet Explorer 10+.
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
+| --------- | --------- | --------- | --------- |
+| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
+
+
 
