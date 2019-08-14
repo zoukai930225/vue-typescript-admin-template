@@ -84,6 +84,7 @@ Modern browsers and Internet Explorer 10+.
 │   │── favicon.ico            # favicon图标
 │   │── manifest.json          # PWA 配置文件
 │   └── index.html             # html模板
+├── plop                       # 快速开发模板(规则)
 ├── src                        # 源代码
 │   ├── api                    # 所有请求
 │   ├── assets                 # 主题 字体等静态资源 (由 webpack 处理加载)
@@ -114,6 +115,7 @@ Modern browsers and Internet Explorer 10+.
 ├── cypress.json               # e2e 测试配置
 ├── jest.config.js             # jest 单元测试配置
 ├── package.json               # package.json 依赖
+├── plopfile.js                # 模板调用文件
 ├── postcss.config.js          # postcss 配置
 ├── tsconfig.json              # typescript 配置
 └── vue.config.js              # vue-cli 配置
